@@ -25,3 +25,7 @@ DEVICE_PACKAGE_OVERLAYS += device/samsung/a5-common/overlay
 
 # Inherit from a5-common
 $(call inherit-product, device/samsung/a5-common/common.mk)
+
+# Ubuntu Touch
+PRODUCT_COPY_FILES += \
+    device/samsung/a5ultexx/ubuntu/rsyslog.conf:system/halium/etc/rsyslog.conf
